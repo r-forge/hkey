@@ -1,0 +1,9 @@
+Package: hkey 
+Type: Package
+Title: Read and write the Windows registry.
+Version: 1.0
+Date: 2008-04-07
+Author: John Brzustowski
+Maintainer: John Brzustowski <jbrzusto@fastmail.fm>
+Description: Query, create, modify, and delete keys and their values using overloaded R list indexing/assignment syntax.
+License: GPL

@@ -1,0 +1,13 @@
+useDynLib("hkey", .registration=TRUE)
+export(hkey)
+S3method("as.list", "hkey")
+S3method("names", "hkey")
+S3method("print", "hkey")
+S3method("[[", "hkey")
+S3method("$", "hkey")
+S3method("[", "hkey")
+S3method("[[<-", "hkey")
+S3method("$<-", "hkey")
+S3method("[<-", "hkey")
+S3method("close", "hkey")
+
