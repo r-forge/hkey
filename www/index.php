@@ -43,7 +43,24 @@ echo $contents; } ?>
 
 <!-- end of project description -->
 
-<p> No content added. </p>
+<p>If you love the Windows registry, you'll like <strong>hkey</strong>.</p>
+<code>
+library(hkey)
+hkey()
+names(hkey())
+x <- hkey("HKEY_LOCAL_MACHINE/SOFTWARE")
+names(x)
+x <- x$"R-core"
+names(x)
+x <- x[["R"]]
+x[]
+as.list(x)
+x$new.value <- "This will be ignored by R, I hope"
+x$new.subnode <- list(a=12345, b=c("one","more","time"),
+d=as.raw(10:1),e=list(nesting=c(2,2)))
+as.list(x)
+x[c("new.value", "new.subnode")] <- list(NULL, NULL)
+</code>
 
 <p> The <strong>project summary page</strong> you can find <a href="http://<?php echo $domain; ?>/projects/<?php echo $group_name; ?>/"><strong>here</strong></a>. </p>
 
